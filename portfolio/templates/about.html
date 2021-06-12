@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}About{% endblock %}
+{% block content %}
+<div id="about">
+	<h1>Hello! My name is John Doe.</h1>
+	<div class="image-container">
+		<img src="{{ url_for('static', filename='john-doe.jpeg') }}" />
+	</div>
+</div>
+{% endblock %}

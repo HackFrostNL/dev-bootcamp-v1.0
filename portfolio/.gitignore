@@ -1,5 +1,6 @@
-# created by virtualenv automatically
+# python
+__pycache__
+venv
 
-/lib
-/bin
-pyvenv.cfg
+# editor
+*.swp

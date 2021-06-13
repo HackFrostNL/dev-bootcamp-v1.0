@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+		{% block head %}
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<title>{% block title %}{% endblock %} | John Doe Portfolio</title>
+		{% endblock %}
+	</head>
+	<body>
+		<div id="content">
+		<nav>
+			<p>John Doe</p>
+			<ul>
+        <li><a href="/">About</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/contact">Contact</a></li>
+			</ul>
+		</nav>
+		{% block content %}{% endblock %}
+		</div>
+	</body>
+</html>

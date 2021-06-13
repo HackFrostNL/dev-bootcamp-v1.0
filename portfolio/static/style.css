@@ -1,0 +1,51 @@
+/* General styles */
+
+body {
+	margin: 0 1rem;
+	/* stolen from https://systemfontstack.com/ */
+	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+#content {
+	margin: 0 auto;
+	max-width: 60rem;
+}
+
+.image-container {
+	display: flex;
+	justify-content: center;
+}
+
+/* Navigation bar */
+nav {
+	border-bottom: 2px solid black;
+	margin-bottom: 1.5rem;
+}
+
+nav p {
+	display: inline-block;
+	margin-right: 2rem;
+	font-weight: 700;
+}
+
+nav ul {
+	float: right;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-left: 1rem;
+}
+
+/* About page */
+#about h1 {
+	text-align: center;
+}
+
+#about img {
+	max-height: 30rem;
+	max-width: 30rem;
+	border: 2px solid black;
+}

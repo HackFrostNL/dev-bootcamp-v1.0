@@ -1,5 +1,25 @@
-{% extends "layout.html" %}
-{% block title %}Contact{% endblock %}
-{% block content %}
-<h1>Contact me:</h1>
+{% extends "layout.html" %} {% block title %}Contact{% endblock %} {% block
+content %}
+<div class="contact">
+	<h1>Stay in Touch</h1>
+	<form action="https://formspree.io/f/xqkwbpro" method="POST">
+		<div class="field">
+			<input type="text" name="name" placeholder="Name" />
+		</div>
+		<div class="field">
+			<input type="email" name="_replyto" placeholder="Email" />
+		</div>
+		<div class="field">
+			<textarea
+				name="message"
+				placeholder="Message"
+				rows="6"
+				cols="25"
+			></textarea>
+		</div>
+		<ul class="">
+			<input type="submit" value="Send Message" />
+		</ul>
+	</form>
+</div>
 {% endblock %}

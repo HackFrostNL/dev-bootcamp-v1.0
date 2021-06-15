@@ -1,1 +1,2 @@
 Flask==2
+python-decouple==3.4

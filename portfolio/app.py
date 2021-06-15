@@ -1,7 +1,9 @@
 from flask import Flask
 from flask import render_template
+from decouple import config
 
 app = Flask(__name__)
+CONTACT_FORM_ACTION = config('FORMSPREE_API')
 
 @app.route('/')
 def about(name=None):
@@ -13,7 +15,7 @@ def projects(name=None):
 
 @app.route('/contact/')
 def contact(name=None):
-    return render_template('contact.html')
+    return render_template('contact.html', api=CONTACT_FORM_ACTION)
 
 if __name__ == '__main__':
 	app.run(debug=True)

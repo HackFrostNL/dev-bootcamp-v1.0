@@ -15,4 +15,3 @@ pip install -r requirements.txt # install all of the required application depend
 
 flask run # start the app!
 ```
-

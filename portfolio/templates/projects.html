@@ -2,4 +2,15 @@
 {% block title %}Projects{% endblock %}
 {% block content %}
 <h1>Some of my projects</h1>
+
+{% for project in projects %}
+<div class="project">
+	<a href="{{ project['url'] }}">
+		<h3>{{ project["name"] }}</h3>
+	</a>
+	<p class="description">{{ project["description"] }}</p>
+	<p class="language">Language: {{ project["language"] }}</p>
+</div>
+{% endfor %}
+
 {% endblock %}

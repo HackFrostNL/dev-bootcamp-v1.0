@@ -149,3 +149,18 @@ form > .field textarea {
 .post .title span {
 	font-style: italic;
 }
+
+/* Blog post page */
+
+#reactions {
+	font-size: 1.5rem;
+}
+
+#reactions .reaction {
+	padding: 0.5rem 1rem;
+	margin-right: 0.5rem;
+	display: inline-block;
+	border-radius: 10px;
+	background-color: white;
+	border: 1px solid rgba(1, 1, 1, 0.1);
+}

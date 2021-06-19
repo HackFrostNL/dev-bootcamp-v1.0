@@ -4,8 +4,30 @@
 <div id="blogpost">
 	<h1>{{ post["title"] }}</h1>
 	<p>{{ post["date"].strftime("%B %d, %Y") }}</p>
+	<div id="reactions">
+		{% for reaction, value in reactions %}
+			<button class="reaction" id="react-{{ reaction }}" value="{{ value }}">
+				{{ reaction }} {{ value }}
+			</button>
+		{% endfor %}
+	</div>
 	<div id="contents">
 		{{ post["html"] | safe }}
 	</div>
 </div>
+
+<script>
+	document.querySelectorAll(".reaction").forEach((reaction) => {
+		console.log('registering reaction', reaction);
+		const slug = window.location.pathname.split('/')[2]
+		const value = reaction.id.split('-')[1];
+
+		reaction.onclick = () => {
+			fetch(`/api/react/${slug}/${value}`);
+			const nextValue = Number(reaction.value) + 1;
+			reaction.value = nextValue;
+			reaction.innerText = `${value} ${nextValue}`;
+		};
+	})
+</script>
 {% endblock %}

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}Blog{% endblock %}
+{% block content %}
+<h1>Blog posts</h1>
+
+{% for post in blog_posts %}
+<a href="/blog/{{ post['slug'] }}">
+	<div class="post">
+		<p class="title">{{ post["title"] }} - <span>{{ post["date"].strftime("%B %d, %Y") }}</span></p>
+	</div>
+</a>
+{% endfor %}
+
+{% endblock %}

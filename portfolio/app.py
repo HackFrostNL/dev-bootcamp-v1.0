@@ -3,7 +3,9 @@ from flask import render_template
 import decouple
 import requests
 
-GITHUB_REPOS_URL = "https://api.github.com/users/jackharrhy/repos?per_page=100"
+GITHUB_USERNAME = decouple.config("GITHUB_USERNAME", default="jackharrhy")
+GITHUB_REPOS_URL = f"https://api.github.com/users/{GITHUB_USERNAME}/repos?per_page=100"
+
 CONTACT_FORM_ACTION = decouple.config("CONTACT_FORM_ACTION", default=None)
 
 app = Flask(__name__)
@@ -13,10 +15,10 @@ projects = []
 projects.append(
     {
         "name": "Non GitHub Project",
-        "description": "a project i did not post on github that i am instead posting here",
+        "description": "a project i did not post on github that i am instead posting here, also a picture that isn't on the internet but instead is contained in the /static directory",
         "language": None,
         "url": None,
-        "image": "https://picsum.photos/seed/nongithub/800/500",
+        "image": "/static/project.jpg",
     }
 )
 

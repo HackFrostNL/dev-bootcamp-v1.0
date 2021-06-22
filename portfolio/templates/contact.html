@@ -2,6 +2,9 @@
 content %}
 <div class="contact">
 	<h1>Stay in Touch</h1>
+	{% if api is none %}
+	<p>WARNING: CONTACT_FORM_ACTION is not set, there is nowhere for data to go!</p>
+	{% endif %}
 	<form action="{{api}}" method="POST">
 		<div class="field">
 			<input type="text" name="name" placeholder="Name" />
@@ -17,9 +20,7 @@ content %}
 				cols="25"
 			></textarea>
 		</div>
-		<ul class="">
-			<input type="submit" value="Send Message" />
-		</ul>
+		<input class="field" type="submit" value="Send Message" />
 	</form>
 </div>
 {% endblock %}

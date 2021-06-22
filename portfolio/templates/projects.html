@@ -2,4 +2,29 @@
 {% block title %}Projects{% endblock %}
 {% block content %}
 <h1>Some of my projects</h1>
+
+{% for project in projects %}
+<div class="project">
+	{% if project["url"] %}
+	<a href="{{ project['url'] }}">
+		<h3>{{ project["name"] }}</h3>
+	</a>
+	{% else %}
+	<h3>{{ project["name"] }}</h3>
+	{% endif %}
+
+	{% if project["description"] %}
+	<p class="description">{{ project["description"] }}</p>
+	{% endif %}
+
+	{% if project["language"] %}
+	<p class="language">Language: {{ project["language"] }}</p>
+	{% endif %}
+
+	{% if project["image"] %}
+	<img src="{{ project['image'] }}" alt="{{ project['name'] }}" />
+	{% endif %}
+</div>
+{% endfor %}
+
 {% endblock %}

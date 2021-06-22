@@ -1,9 +1,15 @@
 /* General styles */
 
+* {
+	box-sizing: border-box;
+	/* stolen from https://systemfontstack.com/ */
+	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+		segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial,
+		sans-serif;
+}
+
 body {
 	margin: 0 1rem;
-	/* stolen from https://systemfontstack.com/ */
-	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
 #content {
@@ -50,16 +56,71 @@ nav ul li {
 	border: 2px solid black;
 }
 
+#about p {
+	padding: 0 20%;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+/* Profiles */
+
+.profiles {
+	margin: 2rem 0 2rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.profiles i {
+	margin: 0 1rem;
+}
+.profiles a {
+	text-decoration: none;
+	color: black;
+}
+
+/* Projects page */
+.project {
+	margin: 3rem 0;
+}
+.project .description {
+	margin-bottom: 0.5rem;
+}
+.project .language {
+	margin: 0;
+	font-size: 0.8rem;
+	font-style: italic;
+}
+.project img {
+	margin: 1.5rem 0 1rem 0;
+}
+
 /* Contact page */
 .contact {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	border-radius: 10px;
-	background-color: #f2f2f2;
-	padding: 20px;
 }
 
-form>.field {
-	margin: 1.5rem;
+.contact form {
+	width: 100%;
+	max-width: 30rem;
+	border-radius: 10px;
+	background-color: #f2f2f2;
+	border: 1px solid rgba(1, 1, 1, 0.1);
+	padding: 1.5rem;
+}
+
+form > .field:not(:first-child) {
+	margin-top: 1.5rem;
+}
+
+form > .field input,
+form > .field textarea,
+form > input[type="submit"] {
+	padding: 0.5rem;
+	width: 100%;
+}
+
+form > .field textarea {
+	resize: vertical;
 }

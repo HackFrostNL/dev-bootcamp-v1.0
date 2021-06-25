@@ -8,8 +8,14 @@
 		sans-serif;
 }
 
+code {
+	font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+		monospace;
+}
+
 body {
 	margin: 0 1rem;
+	background-color: #fcfcff;
 }
 
 #content {
@@ -105,7 +111,7 @@ nav ul li {
 	width: 100%;
 	max-width: 30rem;
 	border-radius: 10px;
-	background-color: #f2f2f2;
+	background-color: white;
 	border: 1px solid rgba(1, 1, 1, 0.1);
 	padding: 1.5rem;
 }
@@ -123,4 +129,38 @@ form > input[type="submit"] {
 
 form > .field textarea {
 	resize: vertical;
+}
+
+/* Blog page */
+
+.post {
+	margin-bottom: 1rem;
+	padding: 1.5rem;
+	border-radius: 10px;
+	background-color: white;
+	border: 1px solid rgba(1, 1, 1, 0.1);
+}
+
+.post .title {
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+.post .title span {
+	font-style: italic;
+}
+
+/* Blog post page */
+
+#reactions {
+	font-size: 1.5rem;
+}
+
+#reactions .reaction {
+	padding: 0.5rem 1rem;
+	margin-right: 0.5rem;
+	display: inline-block;
+	border-radius: 10px;
+	background-color: white;
+	border: 1px solid rgba(1, 1, 1, 0.1);
 }

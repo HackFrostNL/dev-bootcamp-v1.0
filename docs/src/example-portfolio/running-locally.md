@@ -8,7 +8,7 @@ Instructions taken from [here](https://flask.palletsprojects.com/en/2.0.x/instal
 cd path/to/example-portfolio
 ```
 
-2. Ensure you're running Python 3, this is covered in more detail within the [setup](setup/overview.md), but a good sanity check before continuing.
+2. Ensure you're running Python 3, this is covered in more detail within the [setup](/setup/overview.md), but a good sanity check before continuing.
 
 ```sh
 python3 --version
@@ -32,7 +32,7 @@ python3 -m venv venv
 pip install -r requirements.txt
 ```
 
-6. Finally, run the application, and then open your browser to http://localhost:3000; if everything went correctly you should now see the example application!
+6. Finally, run the application, and then open your browser to [http://localhost:3000](http://localhost:3000); if everything went correctly you should now see the example application!
 
 ```sh
 flask run

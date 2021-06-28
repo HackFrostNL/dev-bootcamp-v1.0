@@ -1,6 +1,6 @@
 # Adding new blog posts
 
-Within the example application, adding a blog post is quite simple:
+Within the example portfolio, adding a blog post is quite simple:
 
 1. Create a new markdown file within the `./blog` directory
 

@@ -6,7 +6,7 @@
 	<p>{{ post["date"].strftime("%B %d, %Y") }}</p>
 	<div id="reactions">
 		{% for reaction, value in reactions %}
-			<button class="reaction" id="react-{{ reaction }}" value="{{ value }}">
+			<button class="reaction" id="react-{{ reaction }}" value="{{ value }}" disabled>
 				{{ reaction }} {{ value }}
 			</button>
 		{% endfor %}
@@ -21,12 +21,24 @@
 		console.log('registering reaction', reaction);
 		const slug = window.location.pathname.split('/')[2]
 		const value = reaction.id.split('-')[1];
+		const key = `${slug}${value}`;
+
+		const storedValueForSlug = localStorage.getItem(key);
+		if (storedValueForSlug === null) {
+			reaction.disabled = false;
+		}
+
+		console.log(key, storedValueForSlug)
 
 		reaction.onclick = () => {
 			fetch(`/api/react/${slug}/${value}`);
+
+			localStorage.setItem(key, true);
+
 			const nextValue = Number(reaction.value) + 1;
 			reaction.value = nextValue;
 			reaction.innerText = `${value} ${nextValue}`;
+			reaction.disabled = true;
 		};
 	})
 </script>

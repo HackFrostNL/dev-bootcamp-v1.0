@@ -2,7 +2,7 @@
 
 -   [Introduction to the dev. bootcamp](intro.md)
 
--   [Setting up your environment](setup/overview.md)
+-   [Initial Setup](setup/overview.md)
 
     -   [Windows](setup/windows.md)
     -   [Mac](setup/mac.md)

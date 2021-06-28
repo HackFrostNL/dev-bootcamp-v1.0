@@ -13,7 +13,7 @@ import sqlite3
 GITHUB_USERNAME = decouple.config("GITHUB_USERNAME", default="jackharrhy")
 GITHUB_REPOS_URL = f"https://api.github.com/users/{GITHUB_USERNAME}/repos?per_page=100"
 
-DATABASE_PATH = "portfolio.db"
+DATABASE_PATH = "example-portfolio.db"
 CONTACT_FORM_ACTION = decouple.config("CONTACT_FORM_ACTION", default=None)
 REACTIONS = ["👍", "🔥", "💖️", "✨", "❄️"]
 

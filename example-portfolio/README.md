@@ -1,9 +1,9 @@
-# portfolio
+# example-portfolio
 
 ## How to run locally
 
 ```sh
-cd path/to/portfolio
+cd path/to/example-portfolio
 
 python3 --version # ensure you're running python 3
 

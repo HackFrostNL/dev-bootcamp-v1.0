@@ -8,9 +8,6 @@ on:
 jobs:
     deploy:
         runs-on: ubuntu-20.04
-        defaults:
-            run:
-                working-directory: ./docs
         steps:
             - uses: actions/checkout@v2
 
@@ -19,11 +16,11 @@ jobs:
               with:
                   mdbook-version: "0.4.10"
 
-            - run: mdbook build
+            - run: cd ./docs && mdbook build
 
             - name: Deploy
               uses: peaceiris/actions-gh-pages@v3
               if: github.ref == 'refs/heads/main'
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
-                  publish_dir: ./book
+                  publish_dir: ./docs/book

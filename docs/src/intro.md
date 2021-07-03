@@ -1,3 +1,54 @@
 # Introduction to the dev. bootcamp
 
-Welcome to the developer toolkit bootcamp!
+<head>
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
+
+.fa-instagram {
+background: #125688;
+color: white;
+}
+</style>
+
+<p align="center">
+  <img src="https://hackfrostnl.ca/assets/img/hfnl-logo-big.png" width="400" height="400"/>
+</p>
+<h2 style="font-family:'Courier New'"><span>Hey There :)</span><span class="typed-cursor typed-cursor--blink">|</span></h1>
+</head>
+
+Welcome to the first Hack frost developer toolkit bootcamp! Our mission at Hack Frost is to bridge the gap between the classroom and the workplace. As students ourselves, we noticed that there is a gap between the content taught in the classroom and the tools and skills applied in the workforce; we are determined to help students around the world learn the newest industry standard tools, skills, and technologies to ease their entry to the workforce. Help us build this bridge by spearding the word about our events!
+
+This bootcamp is one of our first building blocks for our mission. In this bootcamp we will together use industry standard technologies in conjuction to fully build and deploy a customizable portfolio and blogging application. We will start at the very basics and go through theory, design, development and deployment. We hope you enjoy the sessions and please feel free to shoot us a message on [discord](https://discord.gg/5XwKBSmw) if you have any questions, concerns or recommendations 😊 see you all soon!
+
+<a href="https://www.facebook.com/hackfrostnl" class="fa fa-facebook"><a href="https://twitter.com/hackfrostnl" class="fa fa-twitter"></a><a href="https://www.instagram.com/hackfrostnl/" class="fa fa-instagram"></a><a href="https://www.linkedin.com/company/hack-frost-nl/about/" class="fa fa-linkedin"></a><a href="https://www.youtube.com/channel/UCTbP245TTeFp3M-ODShyH4A" class="fa fa-youtube"></a></a>

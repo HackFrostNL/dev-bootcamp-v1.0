@@ -2,7 +2,7 @@
 
 Instructions taken from [here](https://flask.palletsprojects.com/en/2.0.x/installation/), if you run into any issues might be good to reference this as well.
 
-1. Make sure your terminal is in the right directory, otherwise none of commands will function correctly!
+1. Make sure your terminal is in the right directory, otherwise none of the commands will function correctly!
 
 ```sh
 cd path/to/example-portfolio

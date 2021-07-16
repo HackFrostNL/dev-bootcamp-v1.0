@@ -1,6 +1,8 @@
 # Summary
 
--   [Introduction to the dev. bootcamp](intro.md)
+-   [Introduction to the dev. bootcamp](intro/overview.md)
+
+    -   [Format Overview](intro/format-overview.md)
 
 -   [Initial Setup](setup/overview.md)
 

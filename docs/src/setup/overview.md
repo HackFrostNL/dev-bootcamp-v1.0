@@ -10,6 +10,6 @@ Python Anywhere is our hosting platform of choice, if you feel comfortable using
 
 -   It has relatively friendly UI
 -   Its file system doesn't get wiped on an interval, and since we are using SQLite which saves its database to a file, we need this property
--   It's free! the free tier is as expected limitied, but there is no upfront cost to using the site
+-   It's free! the free tier is as expected limited, but there is no upfront cost to using the site
 
 This step is only really required once you have code you are ready to deploy, but even while you are running hello world programs, testing them out on a real server anyone on the internet can access is good practice.

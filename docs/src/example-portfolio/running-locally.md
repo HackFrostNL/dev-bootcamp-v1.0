@@ -2,10 +2,13 @@
 
 Instructions taken from [here](https://flask.palletsprojects.com/en/2.0.x/installation/), if you run into any issues might be good to reference this as well.
 
-1. Make sure your terminal is in the right directory, otherwise none of the commands will function correctly!
+The application itself can be found [here](https://github.com/HackFrostNL/dev-bootcamp-v1.0/tree/main/example-portfolio) on our GitHub if you just wish to browse the source code without downloading it to your machine.
+
+1. Clone the project from GitHub, and enter it.
 
 ```sh
-cd path/to/example-portfolio
+git clone https://github.com/HackFrostNL/dev-bootcamp-v1.0.git
+cd ./dev-bootcamp-v1.0/example-portfolio
 ```
 
 2. Ensure you're running Python 3, this is covered in more detail within the [setup](../setup/overview.md), but a good sanity check before continuing.

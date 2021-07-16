@@ -12,4 +12,8 @@ Welcome to the first Hack frost developer toolkit bootcamp! Our mission at Hack 
 
 This bootcamp is one of our first building blocks for our mission. In this bootcamp we will together use industry standard technologies in conjunction to fully build and deploy a customizable portfolio and blogging application. We will start at the very basics and go through theory, design, development and deployment. We hope you enjoy the sessions and please feel free to shoot us a message on [discord](https://discord.gg/5XwKBSmw) if you have any questions, concerns or recommendations 😊 see you all soon!
 
+<div class="wip">
+	<i>this site is still an active work in progress, be warned!</i>
+</div>
+
 <a href="https://www.facebook.com/hackfrostnl" class="fa fa-facebook"><a href="https://twitter.com/hackfrostnl" class="fa fa-twitter"></a><a href="https://www.instagram.com/hackfrostnl/" class="fa fa-instagram"></a><a href="https://www.linkedin.com/company/hack-frost-nl/about/" class="fa fa-linkedin"></a><a href="https://www.youtube.com/channel/UCTbP245TTeFp3M-ODShyH4A" class="fa fa-youtube"></a></a>

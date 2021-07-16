@@ -28,3 +28,10 @@
 		opacity: 0.8;
 	}
 }
+
+.wip {
+	padding: 1rem;
+	background-color: yellow;
+	color: black;
+	border: 3px dashed black;
+}

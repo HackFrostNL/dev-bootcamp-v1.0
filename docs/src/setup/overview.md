@@ -2,6 +2,10 @@
 
 ## Install Python
 
+**Ensure you are using the latest version of Python! At the time of this bootcamp, it is at 3.9.6!**
+
+Older versions _may_ be fine; Python 2 most definitely will however not be.
+
 Installing Python is platform specific, you can follow instructions for installing on either [Windows](./windows.md), [Mac](./mac.md), or [Linux](./linux.md).
 
 ## Create a Python Anywhere account

@@ -148,7 +148,7 @@
 <p>Instructions taken from <a href="https://flask.palletsprojects.com/en/2.0.x/installation/">here</a>, if you run into any issues might be good to reference this as well.</p>
 <p>The application itself can be found <a href="https://github.com/HackFrostNL/dev-bootcamp-v1.0/tree/main/example-portfolio">here</a> on our GitHub if you just wish to browse the source code without downloading it to your machine.</p>
 <ol>
-<li>Clone the project from GitHub, and enter it.</li>
+<li>Clone the project from GitHub, and enter it; ensuring you're in the right directory (that contains files such as <code>app.py</code> and <code>requirements.txt</code> is very important, pretty much every step expects you to be in the one directory).</li>
 </ol>
 <pre><code class="language-sh">git clone https://github.com/HackFrostNL/dev-bootcamp-v1.0.git
 cd ./dev-bootcamp-v1.0/example-portfolio
@@ -161,22 +161,26 @@ cd ./dev-bootcamp-v1.0/example-portfolio
 <ol start="3">
 <li>Create a virtual environment, so you can install packages locally to the project without populating the global python package namespace, and also without needing root to install packages either.</li>
 </ol>
-<pre><code class="language-sh">python3 -m venv venv
+<pre><code class="language-sh">cd path/to/dev-bootcamp-v1.0/example-portfolio
+python3 -m venv venv
 </code></pre>
 <ol start="4">
 <li>Activate the virtual environment, depending on your shell this might be different.</li>
 </ol>
-<pre><code class="language-sh">. venv/bin/activate
+<pre><code class="language-sh">cd path/to/dev-bootcamp-v1.0/example-portfolio
+. venv/bin/activate
 </code></pre>
 <ol start="5">
 <li>Install all of the required application dependencies.</li>
 </ol>
-<pre><code class="language-sh">pip install -r requirements.txt
+<pre><code class="language-sh">cd path/to/dev-bootcamp-v1.0/example-portfolio
+pip install -r requirements.txt
 </code></pre>
 <ol start="6">
 <li>Finally, run the application, and then open your browser to <a href="http://localhost:3000">http://localhost:3000</a>; if everything went correctly you should now see the example application!</li>
 </ol>
-<pre><code class="language-sh">flask run
+<pre><code class="language-sh">cd path/to/dev-bootcamp-v1.0/example-portfolio
+flask run
 </code></pre>
 <p>Don't fret to ask for help in the Discord if you run into any issues with the above commands.</p>
 

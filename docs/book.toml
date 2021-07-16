@@ -3,7 +3,7 @@ authors = ["Jack Arthur Harrhy"]
 language = "en"
 multilingual = false
 src = "src"
-title = "dev. bookcamp v1.0"
+title = "dev. bootcamp v1.0"
 
 [output.html]
 additional-css = ["custom.css"]

@@ -4,3 +4,6 @@ language = "en"
 multilingual = false
 src = "src"
 title = "dev. bookcamp v1.0"
+
+[output.html]
+additional-css = ["custom.css"]

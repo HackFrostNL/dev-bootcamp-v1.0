@@ -1,5 +1,7 @@
 # Session 1
 
+## Intro & Version Control
+
 <div class="wip">
 	<i>work in progress</i>
 </div>
@@ -7,6 +9,10 @@
 > July 17th, 1pm NL Time
 
 ## 1:00 - 15m - Introduction
+
+-   _Likely waiting for folks to join initially_
+-   Cover goals of this bootcamp, the timeline, and other high level items
+-   Talk about the team behind Hackfrost NL, and where you can find us online
 
 ## 1:15 - 30m - Terminal
 

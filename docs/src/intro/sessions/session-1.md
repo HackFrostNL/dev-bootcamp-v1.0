@@ -24,7 +24,7 @@ _Recording will be posted sometime after the session occurs._
 -   VS Code overview
 -   Editing code tricks
 -   Installing Flask
--   Starting virtual enviorment
+-   Starting virtual environment
 -   Writing flask hello world
 -   Running the application locally
 

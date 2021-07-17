@@ -220,7 +220,7 @@
 <li>VS Code overview</li>
 <li>Editing code tricks</li>
 <li>Installing Flask</li>
-<li>Starting virtual enviorment</li>
+<li>Starting virtual environment</li>
 <li>Writing flask hello world</li>
 <li>Running the application locally</li>
 </ul>
@@ -493,9 +493,32 @@ def subtract(x, y):
 </blockquote>
 <p>Try and take this code, and add some more math functions, such as multiplication and division, or go nuts and make it solve arbitrary equations, its up to you!</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="example-3---rainbow-flask"><a class="header" href="#example-3---rainbow-flask">Example 3 - Rainbow Flask</a></h1>
-<div class="wip">
-	<i>work in progress</i>
-</div>
+<p>Follow the same steps as <a href="web/flask/./example-1.html">the first example</a>, but instead use this code:</p>
+<pre><code class="language-py">import random
+from flask import Flask
+
+app = Flask(__name__)
+
+def random_color():
+    return &quot;#{:06x}&quot;.format(random.randint(0, 0xFFFFFF))
+
+@app.route(&quot;/&quot;)
+def rainbow():
+    return f&quot;&quot;&quot;
+&lt;head&gt;
+    &lt;style&gt;
+        body {{
+            background-color: {random_color()}
+        }}
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;Rainbow Flask&lt;/p&gt;
+&lt;/body&gt;
+    &quot;&quot;&quot;
+</code></pre>
+<p>Here, we import the random module, and we define a function that returns a random <a href="https://en.wikipedia.org/wiki/Web_colors#Hex_triplet">hex color</a>.</p>
+<p>This route also contains a bit of <a href="https://en.wikipedia.org/wiki/HTML">HTML</a>, something the previous examples have very little of, because we want to style the background an arbitrary color, this will be covered in more detail later, but for now, if you run this, you will get a page that each time you refresh, will display a piece of text like before, but with a random colorful background!</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="example-portfolio"><a class="header" href="#example-portfolio">Example Portfolio</a></h1>
 <p>Within the repository on GitHub, you'll find a pre-built example portfolio application <a href="https://github.com/HackFrostNL/dev-bootcamp-v1.0/tree/main/example-portfolio">here</a>, that we've put together ourselves.</p>
 <p>However, it is recommended not to take our code and copy it yourself, only to use it as a reference; the application is purposefully simple and lacking in basic things like a color palette, or much information, its simply is a reference.</p>

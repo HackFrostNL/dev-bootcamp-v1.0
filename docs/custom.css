@@ -1,3 +1,8 @@
+iframe {
+	width: 100%;
+	height: 512px;
+}
+
 .social {
 	margin: 1rem;
 }

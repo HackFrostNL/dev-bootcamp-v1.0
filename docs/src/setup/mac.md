@@ -1,5 +1,7 @@
 # Mac
 
+Steps here are specific to Mac, don't forget to check the [general initial setup](./overview.md) as well!
+
 ## Python
 
 Mac ships with Python!

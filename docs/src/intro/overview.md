@@ -16,4 +16,6 @@ This bootcamp is one of our first building blocks for our mission. In this bootc
 	<i>this site is still an active work in progress, be warned!</i>
 </div>
 
-<a href="https://www.facebook.com/hackfrostnl" class="fa fa-facebook"><a href="https://twitter.com/hackfrostnl" class="fa fa-twitter"></a><a href="https://www.instagram.com/hackfrostnl/" class="fa fa-instagram"></a><a href="https://www.linkedin.com/company/hack-frost-nl/about/" class="fa fa-linkedin"></a><a href="https://www.youtube.com/channel/UCTbP245TTeFp3M-ODShyH4A" class="fa fa-youtube"></a></a>
+<div class="social">
+	<a href="https://www.facebook.com/hackfrostnl" class="fa fa-facebook"><a href="https://twitter.com/hackfrostnl" class="fa fa-twitter"></a><a href="https://www.instagram.com/hackfrostnl/" class="fa fa-instagram"></a><a href="https://www.linkedin.com/company/hack-frost-nl/about/" class="fa fa-linkedin"></a><a href="https://www.youtube.com/channel/UCTbP245TTeFp3M-ODShyH4A" class="fa fa-youtube"></a></a>
+</div>

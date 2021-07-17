@@ -318,9 +318,12 @@ Your answer doesn't matter, because this is how fast it is using a command:</p>
 </blockquote>
 <p>The other three are restoring previous versions, which relates to the previous, understanding what happens, and backup, all of which can be found on <a href="https://www.git-tower.com/learn/git/ebook/en/desktop-gui/basics/why-use-version-control/">this page</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="how-does-git-even-work"><a class="header" href="#how-does-git-even-work">How does git even work?</a></h1>
-<div class="wip">
-	<i>work in progress</i>
-</div>
+<p>This is going to get a bit technical very quickly, and is most definitely targeted towards the computer science folk, but Git, at the data structure and algorithms level, uses a <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">directed acyclic graph</a> to store all of its data under the hood.</p>
+<p><img src="https://www.researchgate.net/profile/Ritu-Kundu-2/publication/276851762/figure/fig5/AS:669689269211149@1536677772684/A-directed-acyclic-graph-G-V-E-The-set-of-nodes-V-v1-v2-v15-Note.png" alt="" /></p>
+<p>The magic of Git too, is that once you enter a directory and run <code>git init</code>, all it stores locally is a folder in that directory named <code>.git</code>, there is no Git 'server' or even a centralized location where it stores files (other than configuration, but that is optional)</p>
+<p>To give an example, the very repository you are viewing as a website right now as seen from the command line:</p>
+<p><img src="https://i.imgur.com/CTeRtWH.png" alt="" /></p>
+<p>More about said internals can be found <a href="https://levelup.gitconnected.com/git-internals-c219521d9f6">here</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="web-server"><a class="header" href="#web-server">Web Server</a></h1>
 <div class="wip">
 	<i>work in progress</i>

@@ -157,7 +157,9 @@
 <div class="wip">
 	<i>this site is still an active work in progress, be warned!</i>
 </div>
-<p><a href="https://www.facebook.com/hackfrostnl" class="fa fa-facebook"><a href="https://twitter.com/hackfrostnl" class="fa fa-twitter"></a><a href="https://www.instagram.com/hackfrostnl/" class="fa fa-instagram"></a><a href="https://www.linkedin.com/company/hack-frost-nl/about/" class="fa fa-linkedin"></a><a href="https://www.youtube.com/channel/UCTbP245TTeFp3M-ODShyH4A" class="fa fa-youtube"></a></a></p>
+<div class="social">
+	<a href="https://www.facebook.com/hackfrostnl" class="fa fa-facebook"><a href="https://twitter.com/hackfrostnl" class="fa fa-twitter"></a><a href="https://www.instagram.com/hackfrostnl/" class="fa fa-instagram"></a><a href="https://www.linkedin.com/company/hack-frost-nl/about/" class="fa fa-linkedin"></a><a href="https://www.youtube.com/channel/UCTbP245TTeFp3M-ODShyH4A" class="fa fa-youtube"></a></a>
+</div>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="format-overview"><a class="header" href="#format-overview">Format Overview</a></h1>
 <p>This bootcamp is organized into a few different things:</p>
 <ul>
@@ -197,8 +199,10 @@
 <p><strong>Ensure you are using the latest version of Python! At the time of this bootcamp, it is at 3.9.6!</strong></p>
 <p>Older versions <em>may</em> be fine; Python 2 most definitely will however not be.</p>
 <p>Installing Python is platform specific, you can follow instructions for installing on either <a href="setup/./windows.html">Windows</a>, <a href="setup/./mac.html">Mac</a>, or <a href="setup/./linux.html">Linux</a>.</p>
+<h2 id="create-a-github-account"><a class="header" href="#create-a-github-account">Create a GitHub account</a></h2>
+<p>Learning how to use GitHub is a great asset for any sort of developer, so we're going to be encouraging all work you do to be done inside a repository on GitHub, both for help with issues, and showing off your work, <a href="https://github.com/join">join here</a>.</p>
 <h2 id="create-a-python-anywhere-account"><a class="header" href="#create-a-python-anywhere-account">Create a Python Anywhere account</a></h2>
-<p>Python Anywhere is our hosting platform of choice, if you feel comfortable using something else feel free, but we picked it because:</p>
+<p><a href="https://www.pythonanywhere.com/">Python Anywhere</a> is our hosting platform of choice, if you feel comfortable using something else feel free, but we picked it because:</p>
 <ul>
 <li>It has relatively friendly UI</li>
 <li>Its file system doesn't get wiped on an interval, and since we are using SQLite which saves its database to a file, we need this property</li>
@@ -206,25 +210,40 @@
 </ul>
 <p>This step is only really required once you have code you are ready to deploy, but even while you are running hello world programs, testing them out on a real server anyone on the internet can access is good practice.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="windows"><a class="header" href="#windows">Windows</a></h1>
-<div class="wip">
-	<i>work in progress</i>
-</div>
+<p>Steps here are specific to Windows, don't forget to check the <a href="setup/./overview.html">general initial setup</a> as well!</p>
+<h2 id="wsl"><a class="header" href="#wsl">WSL</a></h2>
+<p>To make the most out of the sessions, we're kindly asking all Windows users to download Windows Subsystem for Linux.</p>
+<p>This will give you a Linux environment within Windows, such that everyone taking this bootcamp will have a similar setup.</p>
+<p><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Learn more here on Microsoft's own documentation</a>.</p>
+<p>Once you are done installing WSL, you can follow most of the instructions over in the <a href="setup/./linux.html">Linux</a> section.</p>
+<p>However, if for some reason you are not able to install WSL (or don't want to), you may still complete the bootcamp using just Windows, but you will need to figure out the Windows alternatives to commands we will be running, and software we will be installing.</p>
+<h2 id="vs-code"><a class="header" href="#vs-code">VS Code</a></h2>
+<p><em>Visual Studio Code + WSL = &lt;3</em></p>
+<p>Thankfully, you can install VS Code on your host machine, and use it to remotely develop within WSL.</p>
+<p><a href="https://code.visualstudio.com/docs/remote/wsl">More on that here</a>.</p>
+<h2 id="terminal"><a class="header" href="#terminal">Terminal</a></h2>
+<p>If you follow the above steps to hook up VS Code, it might be useful to just use the terminal within VS Code to access your projects. Using the provided terminal is of course valid.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="mac"><a class="header" href="#mac">Mac</a></h1>
+<p>Steps here are specific to Mac, don't forget to check the <a href="setup/./overview.html">general initial setup</a> as well!</p>
 <h2 id="python"><a class="header" href="#python">Python</a></h2>
 <p>Mac ships with Python!</p>
 <p>...but its Python 2.7...</p>
 <p>So it's very important that you _do not use your system Python to write code, since everything we'll be writing will be Python 3!</p>
 <p>The guide <a href="https://docs.python-guide.org/starting/install3/osx/">'Installing Python 3 on Mac OS X'</a> over in the 'The Hitchhiker's Guide to Python' is great.</p>
-<h2 id="terminal"><a class="header" href="#terminal">Terminal</a></h2>
+<h2 id="terminal-1"><a class="header" href="#terminal-1">Terminal</a></h2>
 <p>Mac is also ships with a terminal, for our use cases, the built in one is indeed <em>fine</em>.</p>
 <p>If you're feeling fancy, give something like <a href="https://iterm2.com/">iTerm2</a> a chance.</p>
 <p>If you're feeling <em>dangerous</em>, try a hit of <a href="https://github.com/alacritty/alacritty">Alacritty</a> or <a href="https://sw.kovidgoyal.net/kitty/">Kitty</a>.</p>
-<h2 id="vs-code"><a class="header" href="#vs-code">VS Code</a></h2>
+<h2 id="vs-code-1"><a class="header" href="#vs-code-1">VS Code</a></h2>
 <p><a href="https://code.visualstudio.com/docs/setup/mac">https://code.visualstudio.com/docs/setup/mac</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="linux"><a class="header" href="#linux">Linux</a></h1>
-<div class="wip">
-	<i>work in progress</i>
-</div>
+<p>Steps here are specific to Linux, don't forget to check the <a href="setup/./overview.html">general initial setup</a> as well!</p>
+<h2 id="python-1"><a class="header" href="#python-1">Python</a></h2>
+<p><a href="https://docs.python-guide.org/starting/install3/linux/">https://docs.python-guide.org/starting/install3/linux/</a></p>
+<h2 id="terminal-2"><a class="header" href="#terminal-2">Terminal</a></h2>
+<p>Whatever terminal ships with your distro. is probably fine, <a href="https://linuxhint.com/best_7_linux_terminals/">here is a list of 'the best ones' though</a>.</p>
+<h2 id="vs-code-2"><a class="header" href="#vs-code-2">VS Code</a></h2>
+<p><a href="https://code.visualstudio.com/docs/setup/linux">https://code.visualstudio.com/docs/setup/linux</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="terminals-code-editors-and-you"><a class="header" href="#terminals-code-editors-and-you">Terminals, Code Editors, and You</a></h1>
 <div class="wip">
 	<i>work in progress</i>

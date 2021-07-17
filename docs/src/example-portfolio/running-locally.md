@@ -17,7 +17,7 @@ cd ./dev-bootcamp-v1.0/example-portfolio
 python3 --version
 ```
 
-3. Create a virtual environment, so you can install packages locally to the project without populating the global python package namespace, and also without needing root to install packages either.
+3. Create a virtual environment, so you can install packages locally to the project without populating the global python package namespace, and also without needing root to install packages either. More info on virtual environments [here](https://realpython.com/python-virtual-environments-a-primer/).
 
 ```sh
 cd path/to/dev-bootcamp-v1.0/example-portfolio

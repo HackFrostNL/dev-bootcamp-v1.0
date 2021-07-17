@@ -2,11 +2,9 @@
 
 ## Intro & Version Control
 
-<div class="wip">
-	<i>work in progress</i>
-</div>
-
 > July 17th, 1pm NL Time
+
+_Recording will be posted sometime after the session occurs._
 
 ## 1:00 - 15m - Introduction
 
@@ -29,7 +27,7 @@
 -   Starting virtual enviorment
 -   Writing flask hello world
 -   Running the application locally
- 
+
 ## 1:40 - 30m - Git & GitHub
 
 -   What is Git?

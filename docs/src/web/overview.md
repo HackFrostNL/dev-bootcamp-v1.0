@@ -1,4 +1,4 @@
-# Web
+# Web Server
 
 Since one of the main goals of this bootcamp is for you to build a website, it makes sense that it's a good idea to have a good grasp on what exactly _is_ a website beforehand, from a more technical level.
 

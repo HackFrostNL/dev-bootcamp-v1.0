@@ -16,8 +16,20 @@
 
 ## 1:15 - 30m - Terminal
 
+-   What is Terminal?
+-   Terminal configuration
+-   Useful commands
+-   File management
+
 ## 1:25 - 15m - VS Code + Flask Hello World
 
+-   VS Code overview
+-   Editing code tricks
+-   Installing Flask
+-   Starting virtual enviorment
+-   Writing flask hello world
+-   Running the application locally
+ 
 ## 1:40 - 30m - Git & GitHub
 
 -   What is Git?

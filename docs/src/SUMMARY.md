@@ -4,6 +4,12 @@
 
     -   [Format Overview](intro/format-overview.md)
     -   [Deliverables](intro/deliverables.md)
+    -   [Sessions](intro/sessions/overview.md)
+
+        -   [Session 1](intro/sessions/session-1.md)
+        -   [Session 2](intro/sessions/session-2.md)
+        -   [Session 3](intro/sessions/session-3.md)
+        -   [Session 4](intro/sessions/session-4.md)
 
 -   [Initial Setup](setup/overview.md)
 

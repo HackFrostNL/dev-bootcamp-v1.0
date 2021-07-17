@@ -374,7 +374,7 @@ Your answer doesn't matter, because this is how fast it is using a command:</p>
 <p>To give an example, the very repository you are viewing as a website right now as seen from the command line:</p>
 <p><img src="https://i.imgur.com/CTeRtWH.png" alt="" /></p>
 <p>More about said internals can be found <a href="https://levelup.gitconnected.com/git-internals-c219521d9f6">here</a>.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="web"><a class="header" href="#web">Web</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="web-server"><a class="header" href="#web-server">Web Server</a></h1>
 <p>Since one of the main goals of this bootcamp is for you to build a website, it makes sense that it's a good idea to have a good grasp on what exactly <em>is</em> a website beforehand, from a more technical level.</p>
 <p>Websites are something you interact with quite often; you're interacting with one right now, and thankfully as an end user, you don't have to care much to how they work, but if you intend on <em>making</em> websites, it helps to build a better view of how they work.</p>
 <h2 id="urls"><a class="header" href="#urls">URLs</a></h2>
@@ -403,9 +403,50 @@ Your answer doesn't matter, because this is how fast it is using a command:</p>
 	<i>work in progress</i>
 </div>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="example-1---hello-flask"><a class="header" href="#example-1---hello-flask">Example 1 - Hello, Flask!</a></h1>
-<div class="wip">
-	<i>work in progress</i>
-</div>
+<p>Any good 'first program' requires a hello world, so we're going to be building a website, in which its only goal is to return the string 'Hello World!'.</p>
+<p>This tutorial is taken from <a href="https://flask.palletsprojects.com/en/2.0.x/quickstart/">Flasks own website</a>.</p>
+<h2 id="setting-up-our-environment"><a class="header" href="#setting-up-our-environment">Setting up our Environment</a></h2>
+<p>This assumes you have completed the <a href="web/flask/../setup/overview.html">initial setup</a>, such as having the latest version of Python, and a capable editor.</p>
+<h3 id="enter-where-you-want-to-be-and-create-the-directory"><a class="header" href="#enter-where-you-want-to-be-and-create-the-directory">Enter where you want to be, and create the directory</a></h3>
+<pre><code class="language-sh">cd /somewhere/on/my/computer/i/want/to/put/this
+mkdir hello-flask
+cd hello-flask
+pwd # ensure you are where you expect to be on your system!
+</code></pre>
+<h3 id="create-a-virtual-environment-activate-it-install-flask"><a class="header" href="#create-a-virtual-environment-activate-it-install-flask">Create a virtual environment, activate it, install Flask</a></h3>
+<p>Covered in more detail <a href="https://flask.palletsprojects.com/en/2.0.x/installation/#virtual-environments">here</a>.</p>
+<pre><code class="language-sh">cd /somewhere/on/my/computer/i/want/to/put/this/hello-flask
+python3 -m venv venv
+. venv/bin/activate
+pip install Flask
+</code></pre>
+<h3 id="create-the-main-file-fill-it-with-the-hello-world-code"><a class="header" href="#create-the-main-file-fill-it-with-the-hello-world-code">Create the main file, fill it with the hello world code</a></h3>
+<pre><code>cd /somewhere/on/my/computer/i/want/to/put/this/hello-flask
+touch app.py
+</code></pre>
+<p>Open up the newly created <code>app.py</code> in your editor of choice, and fill it with this code:</p>
+<pre><code class="language-py">from flask import Flask
+
+app = Flask(__name__)
+
+@app.route(&quot;/&quot;)
+def hello_world():
+    return &quot;&lt;p&gt;Hello, World!&lt;/p&gt;&quot;
+</code></pre>
+<p>An overview of this code from the Flask Quickstart guide:</p>
+<blockquote>
+<p>First we imported the Flask class. An instance of this class will be our WSGI application.</p>
+<p>Next we create an instance of this class. The first argument is the name of the application’s module or package. <code>__name__</code> is a convenient shortcut for this that is appropriate for most cases. This is needed so that Flask knows where to look for resources such as templates and static files.</p>
+<p>We then use the route() decorator to tell Flask what URL should trigger our function.</p>
+<p>The function returns the message we want to display in the user’s browser. The default content type is HTML, so HTML in the string will be rendered by the browser.</p>
+</blockquote>
+<h3 id="run-the-website"><a class="header" href="#run-the-website">Run the website</a></h3>
+<pre><code>cd /somewhere/on/my/computer/i/want/to/put/this/hello-flask
+flask run
+</code></pre>
+<p>Open up your browser to <a href="http://localhost:5000/">http://localhost:5000/</a>, and you should see this:</p>
+<p><img src="https://i.imgur.com/K3psQRs.png" alt="" /></p>
+<p>A nice empty white page with the text 'Hello, World!'</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="example-2---flask-math"><a class="header" href="#example-2---flask-math">Example 2 - Flask Math</a></h1>
 <div class="wip">
 	<i>work in progress</i>

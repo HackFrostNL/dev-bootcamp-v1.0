@@ -28,3 +28,7 @@ Shows what you are editing in VSCode on Discord.
 
 * [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 Enables you to collaboratively edit and debug with others in real time.
+
+* [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+A basic spell checker that works well with [camelCase](https://en.wikipedia.org/wiki/Camel_case) code.
+

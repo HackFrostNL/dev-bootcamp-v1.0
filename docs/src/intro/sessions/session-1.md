@@ -4,22 +4,20 @@
 
 > July 17th, 1pm NL Time
 
-_Recording will be posted sometime after the session occurs._
+<iframe src="https://www.youtube-nocookie.com/embed/6XFNNIPxoqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 1:00 - 15m - Introduction
+## Introduction `00:00`
 
--   _Likely waiting for folks to join initially_
 -   Cover goals of this bootcamp, the timeline, and other high level items
 -   Talk about the team behind Hackfrost NL, and where you can find us online
 
-## 1:15 - 30m - Terminal
+## Terminals `13:26`
 
--   What is Terminal?
 -   Terminal configuration
 -   Useful commands
 -   File management
 
-## 1:25 - 15m - VS Code + Flask Hello World
+## VS Code `24:09`
 
 -   VS Code overview
 -   Editing code tricks
@@ -28,7 +26,7 @@ _Recording will be posted sometime after the session occurs._
 -   Writing flask hello world
 -   Running the application locally
 
-## 1:40 - 30m - Git & GitHub
+## Git / GitHub `38:49`
 
 -   What is Git?
 -   What is GitHub?
@@ -39,8 +37,8 @@ _Recording will be posted sometime after the session occurs._
 -   Make a Commit fixing the Issue
 -   Close the Issue
 
-## 2:10 - 10m - The 'Web', and HTTP
+## HTTP `1:07:33`
 
 -   What exactly is a 'URL'?
 -   Routes, and their handlers
--   HTTP and its request methods
+-   Client and Servers

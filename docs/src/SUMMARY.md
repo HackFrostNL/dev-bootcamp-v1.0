@@ -37,6 +37,18 @@
         -   [Example 2 - Flask Math](web/flask/example-2.md)
         -   [Example 3 - Rainbow Flask](web/flask/example-3.md)
 
+    -   [HTML](web/html/overview.md)
+
+        -   [Tags](web/html/tags.md)
+        -   [HTML Skeleton](web/html/skeleton.md)
+
+    -   [CSS](web/css/overview.md)
+
+    -   [APIs](web/api/overview.md)
+
+        -   [GitHub](web/api/github.md)
+        -   [Chucknorris.io](web/api/chucknorris-io.md)
+
 -   [Example Portfolio](example-portfolio/overview.md)
 
     -   [Running the application locally](example-portfolio/running-locally.md)

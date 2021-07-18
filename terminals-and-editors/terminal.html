@@ -146,6 +146,10 @@
                     <main>
                         <h1 id="quick-terminal-overview"><a class="header" href="#quick-terminal-overview">Quick Terminal Overview</a></h1>
 <p>Almost every operating system is equipped with a command-line interface or 'terminal', AKA Command Prompt on Windows. Terminals allow you to send commands to your computer to do various things like file management, installing applications, or controlling system configurations. In a nutSHELL, almost anything you can do with your mouse and keyboard can be done using commands.</p>
+<ul>
+<li>Terminal = text input/output environment</li>
+<li>Shell = command line interpreter</li>
+</ul>
 <h2 id="why-command-line"><a class="header" href="#why-command-line">Why command-line?</a></h2>
 <h3 id="1-things-can-get-done-quicker"><a class="header" href="#1-things-can-get-done-quicker">1. Things can get done quicker</a></h3>
 <p>Okay hear me out, lets say you have a directory full of mixed type files and you want to delete all the .png files but keep the rest; how long will that take you to do using your mouse and keyboard?
@@ -153,20 +157,56 @@ Your answer doesn't matter, because this is how fast it is using a command:</p>
 <pre><code class="language-sh">rm *.png
 </code></pre>
 <h3 id="2-youre-in-full-control"><a class="header" href="#2-youre-in-full-control">2. You're in full control</a></h3>
-<p>Command-line allows you to be in full control of your system.</p>
-<div class="wip">
-	<i>work in progress</i>
-</div>
-<h3 id="3-you-look-like-a-hacker"><a class="header" href="#3-you-look-like-a-hacker">3. You look like a hacker</a></h3>
-<p>Yes.</p>
-<h2 id="shells"><a class="header" href="#shells">Shells</a></h2>
-<div class="wip">
-	<i>work in progress</i>
-</div>
+<p>Command-line allows you to be in full control of your system. Things like configuring system settings, killing and starting tasks, managing services and quick installation of packages and applications can all be done efficiently and less error prone through command-line.</p>
+<h3 id="3-you-look-like-a-hacker-using-terminal"><a class="header" href="#3-you-look-like-a-hacker-using-terminal">3. You look like a hacker using Terminal</a></h3>
+<p>Yes.
+<img src="https://i.ytimg.com/vi/qbWqXKN3m3c/maxresdefault.jpg" alt="" /></p>
 <h2 id="useful-commands"><a class="header" href="#useful-commands">Useful Commands</a></h2>
-<div class="wip">
-	<i>work in progress</i>
-</div>
+<ul>
+<li><code>ls</code> — List directory contents
+<ul>
+<li>e.g. <code>ls -a</code> will list all files and folders including hidden ones</li>
+</ul>
+</li>
+<li><code>echo</code> — Prints text to the terminal window
+<ul>
+<li>e.g. <code>echo hello</code> will print 'hello' in next line</li>
+</ul>
+</li>
+<li><code>touch</code> — Creates a file
+<ul>
+<li>e.g. <code>touch app.py</code> will create a python app file in current directory</li>
+</ul>
+</li>
+<li><code>mkdir</code> — Create a directory
+<ul>
+<li>e.g. <code>mkdir projects</code> creates a folder 'projects' in current directory</li>
+</ul>
+</li>
+<li><code>cd</code> — Change directory
+<ul>
+<li>e.g. After creating the 'projects' folder, you can enter it with <code>cd projects</code></li>
+</ul>
+</li>
+<li><code>man</code> — Print manual or get help for a
+command
+<ul>
+<li>e.g. <code>man mkdir</code> will open the manual of how to use the <code>mkdir</code> command</li>
+</ul>
+</li>
+<li><code>pwd</code> — Print working directory</li>
+<li><code>clear</code> — Clear your terminal window</li>
+<li><code>rm</code> — Removes file
+<ul>
+<li>e.g. <code>rm app.py</code> removes the app file you made</li>
+</ul>
+</li>
+</ul>
+<h6 id="aliases"><a class="header" href="#aliases">Aliases</a></h6>
+<p>You can create your own custom commands based on existing commands, for example:</p>
+<pre><code class="language-sh">alias c = “clear”
+</code></pre>
+<p>By running the above command you have created an alias for the command <code>clear</code> to be also recognized by typing the character <code>c</code>; hence if you type <code>c</code> in the next line, your terminal screen wil be cleared.</p>
 
                     </main>
 
